@@ -12,10 +12,10 @@ export const TodoList: React.FC<Props> = (props: Props) => {
 
   return (
     <div className={styles.container}>
-      <h2>TodoList</h2>
+      <h2 className={styles.heading}>TodoList</h2>
       <ul>
         {todos.map((item) => (
-          <li key={item.id}>
+          <li key={item.id} className={styles.item}>
             <TodoItem todo={item} />
           </li>
         ))}

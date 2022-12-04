@@ -8,7 +8,7 @@ type Props = {
 export const Container: React.FC<Props> = (props: Props) => {
   return (
     <div className={styles.container}>
-			<h1>Container</h1>
+			<h1 className={styles.heading}>Container</h1>
 			{props.children}
     </div>
   );

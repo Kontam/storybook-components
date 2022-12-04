@@ -5,9 +5,8 @@
 	padding: 20px;
 }
 
-/*
-#74FCD4
-#76E6E5
-#74DBFC
-#6FAFF2
-*/
+.heading {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
