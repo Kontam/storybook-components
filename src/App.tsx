@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Container from "./components/Container";
+import TodoList from "./components/TodoList";
+import { TODO } from "./types";
+
+const TODOS: TODO[] = [
+  { id: "1", name: "shopping", done: false },
+  { id: "2", name: "cleaning", done: true },
+  { id: "3", name: "nap", done: false },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Container>
+        <TodoList todos={TODOS} />
+      </Container>
     </div>
   );
 }
