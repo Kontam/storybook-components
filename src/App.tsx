@@ -1,4 +1,3 @@
-import "./App.css";
 import Container from "./components/Container";
 import TodoList from "./components/TodoList";
 import { TODO } from "./types";
