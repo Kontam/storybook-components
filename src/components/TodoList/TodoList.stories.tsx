@@ -27,3 +27,9 @@ Primary.args = {
     },
   ],
 };
+
+// TODOが0件の時の表示確認
+export const Empty = Template.bind({});
+Empty.args = {
+  todos: [],
+};

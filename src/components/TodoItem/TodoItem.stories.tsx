@@ -11,10 +11,13 @@ export default {
 const Template: ComponentStory<typeof TodoItem> = (args) => <TodoItem {...args} />;
 
 export const Primary = Template.bind({});
+Primary.argTypes = {
+	handleChange: { action: 'handleChange'}
+}
 Primary.args = {
 	todo: {
 		id: "1",
 		name: "name",
 		done: false,
-	}
+	},
 };
